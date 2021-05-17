@@ -32,7 +32,7 @@ class Song
   end
 
 
-binding.pry
+
   
     
   def self.genre_count
