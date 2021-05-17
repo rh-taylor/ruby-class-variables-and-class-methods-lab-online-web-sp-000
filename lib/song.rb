@@ -39,8 +39,6 @@ class Song
     @@genres.uniq.sort! do |genre|
       @@genre_count << genre
     end
-      
-   end
   end
   
   
