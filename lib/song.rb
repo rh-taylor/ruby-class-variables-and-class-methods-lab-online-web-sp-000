@@ -37,7 +37,10 @@ class Song
   
     
   def self.genre_count
-    @@genres
+    @@genres.uniq.each do |genre|
+      puts genre
+      
+   end
   end
   
   
