@@ -36,8 +36,8 @@ binding.pry
   
     
   def self.genre_count
-    @@genres.uniq.each do |genre|
-      puts genre
+    @@genres.uniq.sort! do |genre|
+      @@genre_count << genre
       
    end
   end
