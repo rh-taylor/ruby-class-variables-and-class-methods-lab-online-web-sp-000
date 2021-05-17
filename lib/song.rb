@@ -5,7 +5,6 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
-  @@genre_count = {}
   
   def initialize(name, artist, genre)
     @name = name
@@ -36,13 +35,17 @@ class Song
   
     
   def self.genre_count
-    @@genres.uniq.sort! do |genre|
-      @@genre_count << genre
+    genre_count = Hash.new(0)
+    @@genres.each do |genre|
     end
   end
   
   
-  
+   def self.genre_count
+    genre_count = Hash.new(0)
+    @@genres.each {|genre| genre_count[genre] += 1}
+    genre_count
+  end
   
   
   
