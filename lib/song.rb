@@ -34,7 +34,7 @@ class Song
 
 
     
-  binding.pry
+  
     
   def self.genre_count
     @@genres
